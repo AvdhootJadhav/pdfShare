@@ -16,7 +16,7 @@ import { MaterialModule } from './material/material.module';
     AppComponent,
     LoginFormComponent,
     SignupFormComponent,
-    DashboardComponent
+    DashboardComponent,
   ],
   imports: [
     BrowserModule,

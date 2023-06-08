@@ -14,6 +14,12 @@ export class ApiService {
     return this.http.post(this.url+'/login',user);
   }
 
+  register(user: any){
+    console.log("register function service", user);
+    
+    return this.http.post(this.url+'/register',user);
+  }
+
   setUser(user:any){
     console.log("set user ", user);
     

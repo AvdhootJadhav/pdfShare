@@ -6,13 +6,13 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 
 const routes: Routes = [
   {
-    path: 'login', component: LoginFormComponent
+    path: '', component: LoginFormComponent
   },
   {
     path: 'signup', component: SignupFormComponent
   },
   {
-    path: '', component: DashboardComponent
+    path: 'dashboard', component: DashboardComponent
   }
 ];
 

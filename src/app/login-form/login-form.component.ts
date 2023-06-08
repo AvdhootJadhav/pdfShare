@@ -28,7 +28,7 @@ export class LoginFormComponent {
         response => {
           console.log(response);
           this.service.setUser(response)
-          window.location.href='/'
+          window.location.href='/dashboard'
         },
         err => {}
       )

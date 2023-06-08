@@ -17,7 +17,7 @@ export class DashboardComponent {
 
   handleLogout(){
     this.service.logout();
-    window.location.reload();
+    window.location.href='';
   }
 
   handleLogin(){
