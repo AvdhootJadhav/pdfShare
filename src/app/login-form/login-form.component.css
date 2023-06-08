@@ -1,0 +1,12 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js");
+
+.login-container{
+    width: 20%;
+    margin-left: 40%;
+    margin-top: 9%;
+}
+
+.custom-field{
+    width: 100%
+}

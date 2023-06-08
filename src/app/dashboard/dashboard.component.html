@@ -1,0 +1,6 @@
+<mat-toolbar>
+    <span>Dashboard</span>
+    <span class="spacer"></span>
+        <button mat-flat-button color="primary" (click)="isLoggedIn ? handleLogout():handleLogin()">{{ isLoggedIn ?
+            'Logout':'Login'}}</button>
+</mat-toolbar>
