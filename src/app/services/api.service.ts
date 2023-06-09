@@ -1,5 +1,6 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpRequest } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -33,6 +34,23 @@ export class ApiService {
     if(user == null || user == undefined)return false;
 
     return true;
+  }
+
+  upload(file: any){
+    console.log(file);
+    const formData = new FormData();
+    formData.append('file',file);
+    
+    const req = new HttpRequest('POST',this.url+"/upload",formData, {
+      reportProgress: true,
+      responseType: 'json'
+    })
+
+    return this.http.request(req);
+  }
+
+  getFiles(): Observable<any> {
+    return this.http.get(this.url+'/files');
   }
 
   logout(){
